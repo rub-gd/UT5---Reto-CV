@@ -1,0 +1,18 @@
+package com.crm.curriculum.services;
+
+import java.util.List;
+
+import com.crm.curriculum.dtos.FormacionComplementariaRequestDto;
+import com.crm.curriculum.dtos.FormacionComplementariaResponseDto;
+
+public interface FormacionComplementariaService {
+	List<FormacionComplementariaResponseDto> listarTodasLasFormacionesComplementarias();
+
+	FormacionComplementariaResponseDto buscarFormacionComplementariaPorId(Integer id_formacionComplementaria);
+
+	FormacionComplementariaResponseDto crearFormacionComplementaria(FormacionComplementariaRequestDto creacion);
+
+	FormacionComplementariaResponseDto actualizarFormacionComplementariaPorId(Integer id_formacionComplementaria, FormacionComplementariaRequestDto datos_actualizados);
+
+	void eliminarFormacionComplementariaPorId(Integer id_formacionComplementaria);
+}
